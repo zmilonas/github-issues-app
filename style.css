@@ -1,6 +1,7 @@
 body {
 	background: url('assets/background.jpg') #ccc no-repeat fixed;
 	background-size: cover;
+	overflow-y: hidden;
 	font-family: 'Roboto', sans-serif;
 }
 .container {
@@ -129,6 +130,7 @@ body {
 	float: right;
 	display: inline-block;
 	width: 17px;
+	cursor: pointer;
 	height: 16px;
 }
 .issue-star-checkbox {
