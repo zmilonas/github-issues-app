@@ -94,6 +94,9 @@
 		document.addEventListener('click',function(e){
 			if(e.target && e.target.classList.contains("issue-star")) e.target.classList.toggle("issue-star-active");
 		});
+		[].forEach.call(document.querySelectorAll(".issue-star-checkbox"), function(){
+			if(this.checked) this.parentNode.classList.add("issue-star-active");
+		})
 	</script>
 </body>
 </html>
