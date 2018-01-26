@@ -1,0 +1,145 @@
+body {
+	background: url('assets/background.jpg') #ccc no-repeat fixed;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	width: 650px;
+	height: 500px;
+	margin: 50vh auto 0;
+	transform: translateY(-50%);
+	background: rgba(0,0,0,0.1);
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+.header {
+	width: 150px;
+	float: left;
+	display: block;
+	height: 100%;
+	background-color: rgba(16, 16, 34, 0.9);
+	border-radius: 10px 0 0 0;
+}
+.nav-os {
+	background-color: #101022;
+	border-radius: 10px 0 0 0;
+	height: 10px;
+	line-height: 10px;
+	padding: 15px;
+}
+.nav-os-btn {
+	display: inline-block;
+	width: 10px;
+	margin-left: 5px;
+	height: 10px;
+	background: #000;
+	border-radius: 50%;
+}
+.nav-os-green {
+	background-color: #00cd46;
+}
+.nav-os-red {
+	background-color: #ff594f;
+}
+.nav-os-yellow {
+	background-color: #ffbc1b;
+}
+.nav-git {
+	height: 460px;
+}
+.nav-git-item {
+	display: block;
+	height: 16px;
+	padding: 17px 0;
+	width: 100%;
+	font-size: 14px;
+	line-height: 16px;
+	color: #fff;
+	text-decoration: none;
+}
+.nav-git-item:hover {
+	background: rgba(255,255,255,0.05);
+}
+.nav-git-item-active {
+	background: rgba(255,255,255,0.1);
+}
+.nav-git-item-icon {
+	float: left;
+	display: inline-block;
+	margin: 0 10px 0 15px;
+	width: 16px;
+	height: 16px;
+}
+.nav-git-item-icon:before {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.nav-git-all:before {
+	content: url('assets/icon-github.svg');
+}
+.nav-git-open:before {
+	content: url('assets/icon-open-issue.svg');
+}
+.nav-git-closed:before {
+	content: url('assets/icon-closed-issue.svg');
+}
+.nav-git-item-label {
+	display: inline-block;
+	float: left;
+    line-height: 18px;
+}
+.nav-git-item-count {
+	display: inline-block;
+	float: right;
+	margin-right: 15px;
+	color: #8a8995;
+}
+.main {
+	width: 470px;
+	height: 500px;
+	overflow-y: scroll;
+	border-radius: 0 10px 10px 0;
+	float: left;
+	display: block;
+	background-color: #f6f6f6;
+	padding: 0 15px;
+}
+.issue-group-date {
+	margin: 10px 0;
+	color: #8a8995;
+	font-size: 12px;
+	font-weight: 300;
+}
+.issue {
+	padding: 12px;
+	background-color: #fff;
+	font-size: 15px;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+}
+.issue:not(:last-child) {
+	margin-bottom: 5px;
+}
+.issue-body {
+	display: inline-block;
+	margin: 0;
+}
+.issue-star {
+	float: right;
+	display: inline-block;
+	width: 17px;
+	height: 16px;
+}
+.issue-star-checkbox {
+	display: none;
+}
+.issue-star:before {
+	display: inline-block;
+	width: 17px;
+	height: 16px;
+	content: url('assets/icon-star.svg');
+}
+.issue-star-active:before {
+	content: url('assets/icon-star-filled.svg');
+}
